@@ -14,8 +14,8 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TREASURINGCODE-WEBPAGE }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TREASURINGCODE }}'
           channelId: live
-          projectId: treasuringcode-webpage
+          projectId: treasuringcode
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
